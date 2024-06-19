@@ -6,5 +6,5 @@ chat doc prototype v1
 
 To link uploading with back-end:
 
-- Setup a `.env` file
-- Set variable `BACKEND_BASE_URL` to _base_ server address (i.e. `http://localhost:3000`)
+- Change `vite.config.ts` proxy target for `/api` route to be the address of the backend (e.g. `http://localhost:3000`)
+- `npm run dev`
