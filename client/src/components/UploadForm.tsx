@@ -1,5 +1,5 @@
 import { useState } from "react";
-import * as service from "../services/service";
+import * as server from "../services/server";
 
 export function UploadForm() {
   const [file, setFile] = useState<File | null>(null);
@@ -17,7 +17,7 @@ export function UploadForm() {
 
     const formData = new FormData();
     formData.set("file", file);
-    await service.uploadFile(formData);
+    await server.uploadFile(formData);
   }
 
   return (
